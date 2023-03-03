@@ -27,7 +27,7 @@ client.on("ready", () => {
   client.channels.fetch(process.env.ID_SERVER).then(channel => {
     //set message with cron
     
-    cron.schedule('* * * * *', function() {
+    cron.schedule('0 * * * *', function() {
       console.log(`running a task at ${new Date().getHours()}:${new Date().getMinutes()}`);
       channel.send(process.env.MESSAGE);
       //if(new Date().getMinutes() == 42){

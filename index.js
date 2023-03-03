@@ -29,7 +29,7 @@ client.on("ready", () => {
     
     cron.schedule('0 * * * *', function() {
       console.log(`running a task at ${new Date().getHours()}:${new Date().getMinutes()}`);
-      channel.send(process.env.MESSAGE);
+      //channel.send(process.env.MESSAGE);
       //if(new Date().getMinutes() == 42){
       //channel.send(process.env.MESSAGE);
       //} else if(new Date().getMinutes() == 43){
